@@ -22,11 +22,6 @@ To get this project running:
 
 This project is a proof of concept for a "geo-caching" type app that uses locations and landmarks instead of the physical objects for the cache. 
 
-![View Gems](https://i.postimg.cc/Y0ZhnNQb/Simulator-Screen-Shot-i-Phone-11-Pro-Max-2020-04-21-at-18-23-28.png)
-![Log In](https://i.postimg.cc/QCHFJYKF/Simulator-Screen-Shot-i-Phone-11-Pro-Max-2020-04-21-at-18-23-51.png)
-![Add Gem](https://i.postimg.cc/MZFMpwgV/Simulator-Screen-Shot-i-Phone-11-Pro-Max-2020-04-21-at-18-24-49.png)
-
-
 ### My Role
 
 -    Entire Networking File
