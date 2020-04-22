@@ -20,7 +20,7 @@
 -    Entire Networking File
 -    Protocols/Delegates
 -    Coordinators
--    Many others...
+-    Many others... (https://github.com/morsedan/geoseek-iOS/graphs/contributors)
 
 ## Requirements
 
