@@ -15,13 +15,11 @@
 [![](https://i.postimg.cc/MZFMpwgV/Simulator-Screen-Shot-i-Phone-11-Pro-Max-2020-04-21-at-18-24-49.png)]
 
 
-### Features
+### My Role
 
--    Feature 1
--    Feature 2
--    Feature 3
--    Feature 4
--    Feature 5
+-    Entire Networking File
+-    Protocols/Delegates
+-    Coordinators
 
 ### Authentication API here
 
