@@ -8,23 +8,7 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/cd8a5fb9bc6d279eda58/maintainability)](https://codeclimate.com/github/Lambda-School-Labs/geoseek-iOS/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/cd8a5fb9bc6d279eda58/test_coverage)](https://codeclimate.com/github/Lambda-School-Labs/geoseek-iOS/test_coverage)
 
-🚫 more info on using badges [here](https://github.com/badges/shields)
-
 ## Project Overview
-
-1️⃣ You can find the deployed project at [🚫URL NAME GOES HERE](🚫copy and paste URL here).
-
-1️⃣ [Trello Board](🚫add link to trello board here)
-
-1️⃣ [Product Canvas](🚫add link to product canvas here)
-
-1️⃣ [UX Design files](🚫add link to design files here) - 🚫 delete if not applicable
-
-🚫 One to two paragraph statement about your product and what it does.
-
-Quis hendrerit dolor magna eget. Pretium quam vulputate dignissim suspendisse. Ut aliquam purus sit amet luctus venenatis lectus magna fringilla. Orci dapibus ultrices in iaculis nunc sed augue. Euismod in pellentesque massa placerat duis ultricies. Bibendum at varius vel pharetra vel turpis nunc eget lorem. Lectus quam id leo in vitae. Purus sit amet luctus venenatis lectus magna fringilla urna porttitor.
-
-Pharetra vel turpis nunc eget lorem dolor sed viverra ipsum. Donec et odio pellentesque diam volutpat. Id diam maecenas ultricies mi eget mauris. Est pellentesque elit ullamcorper dignissim. Orci dapibus ultrices in iaculis nunc.
 
 ![](header.png)
 
