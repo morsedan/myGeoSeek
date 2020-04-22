@@ -7,6 +7,19 @@
 
 ## Project Overview
 
+GeoSeek aims to be a known name for creating engaging experiences through technology while promoting community growth and physical activity.
+
+This is the beginning of this app. It allows a user to view Gems that have been placed by other users, and place gems (registration/log in required for placing Gems).
+
+To get this project running:
+  1. fork and clone the repository
+  2. run `pod install` in the directory where the project is
+  3. create an "AppSupport" directory in your home directory
+  4. within your "AppSupport" directory cretae a mapbox.txt file
+  5. paste your MapBox API key in the mapbox.txt file and close the file
+  6. open the workspace
+  7. install on an iPhone
+
 ![View Gems](https://i.postimg.cc/Y0ZhnNQb/Simulator-Screen-Shot-i-Phone-11-Pro-Max-2020-04-21-at-18-23-28.png)
 ![Log In](https://i.postimg.cc/QCHFJYKF/Simulator-Screen-Shot-i-Phone-11-Pro-Max-2020-04-21-at-18-23-51.png)
 ![Add Gem](https://i.postimg.cc/MZFMpwgV/Simulator-Screen-Shot-i-Phone-11-Pro-Max-2020-04-21-at-18-24-49.png)
