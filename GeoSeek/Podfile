@@ -7,7 +7,7 @@ target 'GeoSeek' do
 #  use_modular_headers!
 
   # Pods for GeoSeek
-	pod 'GoogleAnalytics'
-	pod 'Firebase/Core'
+#	pod 'GoogleAnalytics'
+#	pod 'Firebase/Core'
 	pod 'Mapbox-iOS-SDK', '~> 5.7'
 end
