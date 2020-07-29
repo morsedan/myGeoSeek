@@ -122,7 +122,8 @@ extension MainCoordinator: LoginCoordinatorDelegate {
 
 extension MainCoordinator: GemDetailDelegate {
     func markGemCompleted(_ gem: Gem, comments: String) {
-        NetworkController.shared.markGemCompleted(gem, comments: comments) { result in
+        let networkController = NetworkController()
+        networkController.markGemCompleted(gem, comments: comments) { result in
             switch result {
             case .failure(let error):
                 print("Did not mark completed: \(error)")

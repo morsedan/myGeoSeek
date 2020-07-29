@@ -17,7 +17,8 @@ class GemController {
     var gemDictionary: [Int:Gem] = [:]
     
     func createGem(with gem: GemRepresentation) {
-        NetworkController.shared.createGem(from: gem) { result in
+        let networkController = NetworkController()
+        networkController.createGem(from: gem) { result in
             switch result {
             case .failure(let error):
                 print("Error creating gem: \(error)")
@@ -30,7 +31,8 @@ class GemController {
     }
     
     func fetchGemsFromServer() {
-        NetworkController.shared.fetchGems { (result) in
+        let networkController = NetworkController()
+        networkController.fetchGems { (result) in
             switch result {
             case .failure(let error):
                 print("Error fetching gems: \(error)")

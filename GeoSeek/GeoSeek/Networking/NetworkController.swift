@@ -13,14 +13,14 @@ class NetworkController {
     
     // MARK: - Properties
     
-    static let shared = NetworkController()
+//    static let shared = NetworkController()
         private let baseURL = URL(string: "https://geoseek-be-stage.herokuapp.com/api/")!
     //    private let baseURL = URL(string: "https://geoseek-be.herokuapp.com/api/")!
 //    private let baseURL = URL(string: "https://labs21-geoseek-be.herokuapp.com/api")!
     
     // MARK: - Lifecycle Methods
     
-    private init() {}
+//    private init() {}
     
     // MARK: - Gems
     

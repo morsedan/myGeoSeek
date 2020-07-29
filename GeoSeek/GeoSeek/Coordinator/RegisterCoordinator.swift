@@ -31,7 +31,8 @@ class RegisterCoordinator: BaseCoordinator {
     func logInAfterRegistering(user: User) {
         guard let username = user.username,
             let password = user.password else { return }
-        NetworkController.shared.signIn(with: username, password: password) { result in
+        let networkController = NetworkController()
+        networkController.signIn(with: username, password: password) { result in
             switch result {
             case .failure(let error):
                 print("There was an error logging in after registering: \(error)")
@@ -44,7 +45,8 @@ class RegisterCoordinator: BaseCoordinator {
 
 extension RegisterCoordinator: RegisterUserDelegate {
     func registerUser(with username: String, password: String, email: String) {
-        NetworkController.shared.register(with: username, password: password, email: email) { result in
+        let networkController = NetworkController()
+        networkController.register(with: username, password: password, email: email) { result in
             switch result {
             case .failure(let error):
                 print("Registration error: \(error)")

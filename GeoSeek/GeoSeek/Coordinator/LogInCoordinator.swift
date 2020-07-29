@@ -30,7 +30,8 @@ class LogInCoordinator: BaseCoordinator {
 extension LogInCoordinator: LogInDelegate {
     
     func attemptLogIn(with username: String, password: String) {
-        NetworkController.shared.signIn(with: username, password: password) { result in
+        let networkController = NetworkController()
+        networkController.signIn(with: username, password: password) { result in
             switch result {
             case .failure(_):
                 self.showLogInFailedAlert()

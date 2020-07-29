@@ -27,7 +27,8 @@ class GemsMapVC: UIViewController, Storyboarded {
         customTabBarXib.delegate = delegate
         navButtonsXib.delegate = delegate
         
-        NetworkController.shared.fetchGems { result in
+        let networkController = NetworkController()
+        networkController.fetchGems { result in
             switch result {
             case .failure(let error):
                 print("Error fetching Gems: \(error)")
