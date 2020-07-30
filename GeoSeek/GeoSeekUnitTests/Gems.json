@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "title": "Waves",
+    "created_by_user": 1,
+    "longitude": -86.78903,
+    "latitude": 36.176743,
+    "difficulty": 1,
+    "description": "See the Mural"
+  },
+  {
+    "id": 2,
+    "title": "CaliLake",
+    "created_by_user": 3,
+    "longitude": -122.09512,
+    "latitude": 37.75447,
+    "difficulty": 5,
+    "description": "This is a lake in California"
+  },
+  {
+    "id": 4,
+    "title": "Union Square",
+    "created_by_user": 4,
+    "longitude": -122.40751,
+    "latitude": 37.787895,
+    "difficulty": 5,
+    "description": "In San Francisco"
+  }
+]
