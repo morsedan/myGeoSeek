@@ -13,20 +13,24 @@ class NetworkController {
     
     // MARK: - Properties
     
-//    static let shared = NetworkController()
-        private let baseURL = URL(string: "https://geoseek-be-stage.herokuapp.com/api/")!
+    //    static let shared = NetworkController()
+    private let baseURL = URL(string: "https://geoseek-be-stage.herokuapp.com/api/")!
     //    private let baseURL = URL(string: "https://geoseek-be.herokuapp.com/api/")!
-//    private let baseURL = URL(string: "https://labs21-geoseek-be.herokuapp.com/api")!
+    //    private let baseURL = URL(string: "https://labs21-geoseek-be.herokuapp.com/api")!
+    var defaultSession: TestableURLSession!
     
     // MARK: - Lifecycle Methods
     
-//    private init() {}
+    //    private init() {}
+    init(defaultSession: URLSession = URLSession.shared) {
+        self.defaultSession = defaultSession
+    }
     
     // MARK: - Gems
     
     func fetchGems(completion: @escaping (Result<[Gem], FetchError>) -> Void) {
         let request = URLRequest.gsGemURL(from: baseURL, with: .get)
-        
+        print("Right Here:", request)
         perform(request) { result in
             switch result {
             case .failure(let error):
@@ -77,7 +81,7 @@ class NetworkController {
         let userToRegister = createUserJSON(username, password, and: email)
         var request = URLRequest.gsUserURL(from: baseURL, with: .post, and: .register)
         request.httpBody = userToRegister
-
+        
         perform(request) { result in
             switch result {
             case .failure(let error):
@@ -101,7 +105,7 @@ class NetworkController {
         let user = createUserJSON(username, password, and: "")
         var request = URLRequest.gsUserURL(from: baseURL, with: .post, and: .login)
         request.httpBody = user
-
+        
         perform(request) { result in
             switch result {
             case .failure(let error):
@@ -163,7 +167,7 @@ class NetworkController {
         var request = URLRequest.gsCompletedURL(from: baseURL, with: .post, and: user)
         let encodedCompletedBy = encode(item: completedToSend)
         request.httpBody = encodedCompletedBy
-
+        
         perform(request) { result in
             switch result {
             case .failure(let error):
@@ -182,7 +186,7 @@ class NetworkController {
     // MARK: - Helper Methods
     
     private func perform(_ request: URLRequest, completion: @escaping (Result<Data, Error>) -> Void) {
-        let dataTask = URLSession.shared.dataTask(with: request) { data, response, error in
+        let dataTask = defaultSession.dataTask(with: request) { data, response, error in
             
             if let error = error {
                 print("NetworkController.fetch Error: \(error)")

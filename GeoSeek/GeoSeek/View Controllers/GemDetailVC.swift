@@ -15,7 +15,6 @@ protocol GemDetailDelegate {
 
 class GemDetailVC: UIViewController, Storyboarded {
     
-    
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var gemDetailView: UIView!
     

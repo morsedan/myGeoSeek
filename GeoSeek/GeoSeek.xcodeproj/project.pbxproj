@@ -41,6 +41,10 @@
 		C01EF35724105CCB0094CEAB /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EF35624105CCB0094CEAB /* BaseCoordinator.swift */; };
 		C01EF35924105E6B0094CEAB /* GemsMapCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EF35824105E6B0094CEAB /* GemsMapCoordinator.swift */; };
 		C01EF35B241063490094CEAB /* CreateGemCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EF35A241063490094CEAB /* CreateGemCoordinator.swift */; };
+		C054011524D22F540081B82E /* GeoSeekUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C054011424D22F540081B82E /* GeoSeekUnitTests.swift */; };
+		C054011D24D246B60081B82E /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C054011C24D246B60081B82E /* MockURLSession.swift */; };
+		C054011F24D24AD20081B82E /* GeoSeekFakeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C054011E24D24AD20081B82E /* GeoSeekFakeTests.swift */; };
+		C054012124D258670081B82E /* Gems.json in Resources */ = {isa = PBXBuildFile; fileRef = C054012024D24C2A0081B82E /* Gems.json */; };
 		C05CA084241BE49F00BB2A03 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05CA083241BE49F00BB2A03 /* RegisterVC.swift */; };
 		C05CA087241BE90700BB2A03 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05CA086241BE90700BB2A03 /* String+Extension.swift */; };
 		C05CA089241BF6EB00BB2A03 /* RegisterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05CA088241BF6EB00BB2A03 /* RegisterCoordinator.swift */; };
@@ -54,6 +58,16 @@
 		C087246D242953BD002E1105 /* ShiftableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C087246C242953BD002E1105 /* ShiftableViewController.swift */; };
 		C0872471242A7C6A002E1105 /* MGLMapView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0872470242A7C6A002E1105 /* MGLMapView+Extension.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C054011724D22F540081B82E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85087D9323FF463900DD9D1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85087D9A23FF463900DD9D1B;
+			remoteInfo = GeoSeek;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		06D5F6992FD36056488BBE80 /* Pods-GeoSeek.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoSeek.debug.xcconfig"; path = "Target Support Files/Pods-GeoSeek/Pods-GeoSeek.debug.xcconfig"; sourceTree = "<group>"; };
@@ -96,6 +110,12 @@
 		C01EF35624105CCB0094CEAB /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		C01EF35824105E6B0094CEAB /* GemsMapCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GemsMapCoordinator.swift; sourceTree = "<group>"; };
 		C01EF35A241063490094CEAB /* CreateGemCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGemCoordinator.swift; sourceTree = "<group>"; };
+		C054011224D22F540081B82E /* GeoSeekUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoSeekUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C054011424D22F540081B82E /* GeoSeekUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoSeekUnitTests.swift; sourceTree = "<group>"; };
+		C054011624D22F540081B82E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C054011C24D246B60081B82E /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
+		C054011E24D24AD20081B82E /* GeoSeekFakeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoSeekFakeTests.swift; sourceTree = "<group>"; };
+		C054012024D24C2A0081B82E /* Gems.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Gems.json; sourceTree = "<group>"; };
 		C05CA083241BE49F00BB2A03 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		C05CA086241BE90700BB2A03 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		C05CA088241BF6EB00BB2A03 /* RegisterCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCoordinator.swift; sourceTree = "<group>"; };
@@ -116,6 +136,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				492590FD7FB81556E40F8502 /* Pods_GeoSeek.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C054010F24D22F540081B82E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				85087D9D23FF463900DD9D1B /* GeoSeek */,
+				C054011324D22F540081B82E /* GeoSeekUnitTests */,
 				85087D9C23FF463900DD9D1B /* Products */,
 				E1537D308A57C09B3AACC8B5 /* Pods */,
 				C04219506B0B3E19F541503D /* Frameworks */,
@@ -152,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				85087D9B23FF463900DD9D1B /* GeoSeek.app */,
+				C054011224D22F540081B82E /* GeoSeekUnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -251,6 +280,7 @@
 			isa = PBXGroup;
 			children = (
 				C01EF3122405F1EE0094CEAB /* NetworkController.swift */,
+				C054011C24D246B60081B82E /* MockURLSession.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -262,6 +292,17 @@
 				5EBF778F07D57AF029E0F771 /* Pods_GeoSeek.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C054011324D22F540081B82E /* GeoSeekUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				C054011424D22F540081B82E /* GeoSeekUnitTests.swift */,
+				C054011E24D24AD20081B82E /* GeoSeekFakeTests.swift */,
+				C054012024D24C2A0081B82E /* Gems.json */,
+				C054011624D22F540081B82E /* Info.plist */,
+			);
+			path = GeoSeekUnitTests;
 			sourceTree = "<group>";
 		};
 		C05CA085241BE8DB00BB2A03 /* Extensions */ = {
@@ -307,18 +348,40 @@
 			productReference = 85087D9B23FF463900DD9D1B /* GeoSeek.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C054011124D22F540081B82E /* GeoSeekUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C054011B24D22F540081B82E /* Build configuration list for PBXNativeTarget "GeoSeekUnitTests" */;
+			buildPhases = (
+				C054010E24D22F540081B82E /* Sources */,
+				C054010F24D22F540081B82E /* Frameworks */,
+				C054011024D22F540081B82E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C054011824D22F540081B82E /* PBXTargetDependency */,
+			);
+			name = GeoSeekUnitTests;
+			productName = GeoSeekUnitTests;
+			productReference = C054011224D22F540081B82E /* GeoSeekUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		85087D9323FF463900DD9D1B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1130;
+				LastSwiftUpdateCheck = 1150;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Brandi Bailey";
 				TargetAttributes = {
 					85087D9A23FF463900DD9D1B = {
 						CreatedOnToolsVersion = 11.3.1;
+					};
+					C054011124D22F540081B82E = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 85087D9A23FF463900DD9D1B;
 					};
 				};
 			};
@@ -336,6 +399,7 @@
 			projectRoot = "";
 			targets = (
 				85087D9A23FF463900DD9D1B /* GeoSeek */,
+				C054011124D22F540081B82E /* GeoSeekUnitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -352,6 +416,14 @@
 				1C4BCDA92409B37E00EDF681 /* CustomTabBarXib.xib in Resources */,
 				85087DA623FF463900DD9D1B /* Main.storyboard in Resources */,
 				C087243B2422A4F3002E1105 /* PasswordView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C054011024D22F540081B82E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C054012124D258670081B82E /* Gems.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +507,7 @@
 				C05CA087241BE90700BB2A03 /* String+Extension.swift in Sources */,
 				85087DB623FF50E400DD9D1B /* GeoSeek.xcdatamodeld in Sources */,
 				1C4C2403242296E100E8765E /* CustomCalloutView.swift in Sources */,
+				C054011D24D246B60081B82E /* MockURLSession.swift in Sources */,
 				853F8C5D240597C700BF7B4D /* Coordinator.swift in Sources */,
 				C08724452426863F002E1105 /* User+Extension.swift in Sources */,
 				C05CA084241BE49F00BB2A03 /* RegisterVC.swift in Sources */,
@@ -464,7 +537,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C054010E24D22F540081B82E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C054011F24D24AD20081B82E /* GeoSeekFakeTests.swift in Sources */,
+				C054011524D22F540081B82E /* GeoSeekUnitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C054011824D22F540081B82E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85087D9A23FF463900DD9D1B /* GeoSeek */;
+			targetProxy = C054011724D22F540081B82E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		85087DA423FF463900DD9D1B /* Main.storyboard */ = {
@@ -642,6 +732,46 @@
 			};
 			name = Release;
 		};
+		C054011924D22F540081B82E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GeoSeekUnitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = git.GeoSeekUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeoSeek.app/GeoSeek";
+			};
+			name = Debug;
+		};
+		C054011A24D22F540081B82E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GeoSeekUnitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = git.GeoSeekUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeoSeek.app/GeoSeek";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -659,6 +789,15 @@
 			buildConfigurations = (
 				85087DB023FF463A00DD9D1B /* Debug */,
 				85087DB123FF463A00DD9D1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C054011B24D22F540081B82E /* Build configuration list for PBXNativeTarget "GeoSeekUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C054011924D22F540081B82E /* Debug */,
+				C054011A24D22F540081B82E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -41,7 +41,6 @@ class CustomTabBarXib: UIView, Storyboarded {
         
         addGemMapViewButton.backgroundColor = customColor
         addGemMapViewButton.layer.cornerRadius = 20
-        
     }
     
     @IBAction func addGemMapViewButtonTapped(_ sender: Any) {
