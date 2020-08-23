@@ -9,7 +9,7 @@
 import XCTest
 @testable import GeoSeek
 
-class GeoSeekFakeTests: XCTestCase {
+class GeoSeekFetchGemTests: XCTestCase {
     
     var sut: NetworkController!
     
