@@ -30,7 +30,6 @@ class NetworkController {
     
     func fetchGems(completion: @escaping (Result<[Gem], FetchError>) -> Void) {
         let request = URLRequest.gsGemURL(from: baseURL, with: .get)
-        print("Right Here:", request)
         perform(request) { result in
             switch result {
             case .failure(let error):
@@ -45,7 +44,6 @@ class NetworkController {
                 }
                 let gems = gemRepresentations.compactMap { Gem(representation: $0) }
                 completion(.success(gems))
-                print(gems.count)
             }
         }
     }
