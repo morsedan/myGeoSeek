@@ -43,8 +43,9 @@
 		C01EF35B241063490094CEAB /* CreateGemCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EF35A241063490094CEAB /* CreateGemCoordinator.swift */; };
 		C054011524D22F540081B82E /* GeoSeekUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C054011424D22F540081B82E /* GeoSeekUnitTests.swift */; };
 		C054011D24D246B60081B82E /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C054011C24D246B60081B82E /* MockURLSession.swift */; };
-		C054011F24D24AD20081B82E /* GeoSeekFakeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C054011E24D24AD20081B82E /* GeoSeekFakeTests.swift */; };
+		C054011F24D24AD20081B82E /* GeoSeekFetchGemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C054011E24D24AD20081B82E /* GeoSeekFetchGemTests.swift */; };
 		C054012124D258670081B82E /* Gems.json in Resources */ = {isa = PBXBuildFile; fileRef = C054012024D24C2A0081B82E /* Gems.json */; };
+		C054012324D3239F0081B82E /* GeoSeekURLRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C054012224D3239F0081B82E /* GeoSeekURLRequestTests.swift */; };
 		C05CA084241BE49F00BB2A03 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05CA083241BE49F00BB2A03 /* RegisterVC.swift */; };
 		C05CA087241BE90700BB2A03 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05CA086241BE90700BB2A03 /* String+Extension.swift */; };
 		C05CA089241BF6EB00BB2A03 /* RegisterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05CA088241BF6EB00BB2A03 /* RegisterCoordinator.swift */; };
@@ -114,8 +115,9 @@
 		C054011424D22F540081B82E /* GeoSeekUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoSeekUnitTests.swift; sourceTree = "<group>"; };
 		C054011624D22F540081B82E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C054011C24D246B60081B82E /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
-		C054011E24D24AD20081B82E /* GeoSeekFakeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoSeekFakeTests.swift; sourceTree = "<group>"; };
+		C054011E24D24AD20081B82E /* GeoSeekFetchGemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoSeekFetchGemTests.swift; sourceTree = "<group>"; };
 		C054012024D24C2A0081B82E /* Gems.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Gems.json; sourceTree = "<group>"; };
+		C054012224D3239F0081B82E /* GeoSeekURLRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoSeekURLRequestTests.swift; sourceTree = "<group>"; };
 		C05CA083241BE49F00BB2A03 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		C05CA086241BE90700BB2A03 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		C05CA088241BF6EB00BB2A03 /* RegisterCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCoordinator.swift; sourceTree = "<group>"; };
@@ -298,7 +300,8 @@
 			isa = PBXGroup;
 			children = (
 				C054011424D22F540081B82E /* GeoSeekUnitTests.swift */,
-				C054011E24D24AD20081B82E /* GeoSeekFakeTests.swift */,
+				C054011E24D24AD20081B82E /* GeoSeekFetchGemTests.swift */,
+				C054012224D3239F0081B82E /* GeoSeekURLRequestTests.swift */,
 				C054012024D24C2A0081B82E /* Gems.json */,
 				C054011624D22F540081B82E /* Info.plist */,
 			);
@@ -541,7 +544,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C054011F24D24AD20081B82E /* GeoSeekFakeTests.swift in Sources */,
+				C054011F24D24AD20081B82E /* GeoSeekFetchGemTests.swift in Sources */,
+				C054012324D3239F0081B82E /* GeoSeekURLRequestTests.swift in Sources */,
 				C054011524D22F540081B82E /* GeoSeekUnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

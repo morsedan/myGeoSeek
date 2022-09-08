@@ -18,7 +18,7 @@ class GeoSeekFetchGemTests: XCTestCase {
         sut = NetworkController()
         let testBundle = Bundle(for: type(of: self))
         let path = testBundle.path(forResource: "Gems", ofType: "json")
-        print(testBundle)
+        
         let data = try? Data(contentsOf: URL(fileURLWithPath: path!), options: .alwaysMapped)
         
         let url = URL(string: "anyString")
